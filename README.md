@@ -40,4 +40,43 @@ const greet = <h1 className = "greetings"> Hello </h1>
 
 ```
 
+### 4. What are components in React?
+
+In fact, Every thing is component in React. To explain the concept, we can say in simple words that the component is an isolated piece of interface. In the application, Navbar, Sidebar etc are all components. These components are made separately and join together and as a result, one React Application completes.
+
+#### Types of Components:
+In React, there are two types of components.
+- Function based component
+- Class based component
+
+#### Function based component:
+
+The function based component is basically a JavaScript function that returns HTML, which is JSX. The example is:
+
+```javascript
+function Clock = () => {
+   return <h1> Clock is Important </h1>
+}
+```
+
+#### Class based component:
+
+The class based components are typically JavaScript class which extends React.Component. Here is the example
+
+```javascript
+
+import React, { Component } from 'react'
+
+class Clock extends Component {
+render(){
+return <h1> Clock is Important </h1>
+}
+}
+
+```
+
+### 5. How to create a new React App?
+
+
+
 
