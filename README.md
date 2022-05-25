@@ -1,11 +1,11 @@
 # React Documentation for WeatherApi Application
 
 # 1. React Basics
- ### What is React.js?
+ ### 1. What is React.js?
 
 React is a JavaScript Library which is being used widely to make a larger application. The aim of using React is to make the Visual Interfaces simple. React allows its developers to perform CRUD tasks without realoding the page. React is being used by the companies like facebook, Netflix, Instagram etc.
 
- ### Setup tools for React App
+ ### 2. Setup tools for React App
  
  #### The following tools required to use React Journey
  - VS Code (Code Editor to write the code)
@@ -19,3 +19,25 @@ React is a JavaScript Library which is being used widely to make a larger applic
   ![alt devTools](https://assets.digitalocean.com/articles/67372/chrome_success_message.png)
  ###### For Backend:
  - Node Js (To execute JS without using browser)
+
+### 3. What is React JSX?
+
+JXS is actually a syntax extension in JS which allows developers to write HTML inside React. JSX is the abbreviation of JavaScript XML. The example of JSX is as follows:
+
+```javascript
+const languages= (
+<ul>
+ <li> Java </li>
+ <li> PHP </li>
+ <li> Scala </li>
+ </ul>
+ )
+```
+In JavaScript, class is reserved keyword, so that developers must use className to execute the JSX like as follows:
+
+```javascript
+const greet = <h1 className = "greetings"> Hello </h1>
+
+```
+
+
