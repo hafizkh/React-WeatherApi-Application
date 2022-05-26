@@ -77,6 +77,25 @@ return <h1> Clock is Important </h1>
 
 ### 5. How to create a new React App?
 
+In ordert to create a new react app, one should follow certain steps and then, we get folder package in our local machine from the React. At first we should run the following command in the PowerShell terminal of VS Code:
 
+```bash
+npx create-react-app weatherapi
+```
 
+By executing the above command, we get a full package automatically from the React in the selected location and to start the installed project, we should change directory, if the seected location is different by run the following command:
 
+```bash
+cd weatherapi
+```
+
+Once everyting is open and ready to start work in code Editor (VS Code), we should write the following command to start the first default React app.
+
+```bash
+npm run start
+```
+After successfully execution of the app, we will get the result like this as given below:
+
+![alt devTools](https://assets.digitalocean.com/articles/67372/chrome_success_message.png)
+
+In this way, we create a new React app and later, certainly we customize the folders and files include in the package as per our need.
