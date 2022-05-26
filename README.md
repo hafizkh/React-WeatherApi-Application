@@ -3,7 +3,7 @@
 # 1. React Basics
  ### 1. What is React.js?
 
-React is a JavaScript Library which is being used widely to make a larger application. The aim of using React is to make the Visual Interfaces simple. React allows its developers to perform CRUD tasks without realoding the page. React is being used by the companies like facebook, Netflix, Instagram etc.
+React is a Facebook-developed FrontEnd JavaScript Library which is being used widely to make a larger application. The aim of using React is to make the Visual Interfaces simple. React allows its developers to perform CRUD tasks without realoding the page. React is being used by the companies like facebook, Netflix, Instagram etc.
 
  ### 2. Setup tools for React App
  
@@ -167,4 +167,61 @@ export default class Weather extends Component {
 The result of these codes can be shown in the image
 
 ![alt devTools](images/Demo_State_React.PNG)
+
+### 3. What is an event?
+
+Event in React is defined as an action, which is being triggered by a user action. There are several events in the React which is being used as a result of triggered. Few of them are as follows:
+
+| Mouse | Composition | Clipboard | Media |
+| --- | --- | --- | --- |
+| onClick | onCompositionEnd | onCopy | onAbort|
+| onContextMenu | onCompositionStart | onCut | onCanPlay |
+| onDoubleClick | onCompositionUpdate | onPaste | onCanPlayThrough |
+
+### 4. Event Handling in React
+
+As far as handling events concerned in React, there is a function need to be called inside the event in the component class. It is named as Camel Case instead of lower case letters like onClick, onCut, onPaste etc. The following code is the representation of events handling in the React. Events are being hanlded different in the class based components and function based components. Below is the example of function based component event handler.
+
+```javascript
+const test = () => {
+alert ('This is test')
+}
+<button onClick={test}>Click Me</button>
+```
+
+Here is the event being handled in the class based component.
+
+```javascript
+test () {
+ alert ('This is test')
+}
+<button onClick={() => this.test()}>Click Me</button>
+```
+
+### 5. Demo of React Events
+
+The demonstration of the events being handled in the React is given as:
+
+```javascript
+import React, { Component } from "react";
+import "./App.css";
+
+export default class Weather extends Component {
+  handleWeather() {
+    alert("Happy Rainy day");
+  }
+  render() {
+    return (
+      <div className="App">
+        <h1> Today, there is Raining</h1>
+        <button onClick={() => this.handleWeather()}>Greeting</button>
+      </div>
+    );
+  }
+}
+```
+
+The result of the above code is given in the following scrennshot
+![alt devTools](images/Demo_State_React.PNG)
+
 
