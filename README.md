@@ -16,7 +16,7 @@ React is a JavaScript Library which is being used widely to make a larger applic
   - Auto Rename Tag, This extension provides the help to change the name of the tag by changing the name of only the starting tag but ending tag changes automatically
  ##### Chrome Extensions:
  - React Dev tools (Chrome Extension to visualize the React result better) as shown in the fig.
-  ![alt devTools](https://assets.digitalocean.com/articles/67372/chrome_success_message.png)
+  ![alt devTools](images/React_dev_tools.PNG)
  ###### For Backend:
  - Node Js (To execute JS without using browser)
 
@@ -96,6 +96,6 @@ npm run start
 ```
 After successfully execution of the app, we will get the result like this as given below:
 
-![alt devTools](https://assets.digitalocean.com/articles/67372/chrome_success_message.png)
+![alt devTools](images/Start_Screen.PNG)
 
 In this way, we create a new React app and later, certainly we customize the folders and files include in the package as per our need.
