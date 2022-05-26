@@ -1,21 +1,16 @@
-import React, { Component } from 'react'
+import React, { Component } from "react";
+import "./App.css";
 
 export default class Weather extends Component {
-
-    constructor(){
-        super();
-        this.state = {
-            day : 'Thursday',
-            yesterday: 'Wednesday'
-            
-        }
-    }
+  handleWeather() {
+    alert("Happy Rainy day");
+  }
   render() {
     return (
-      <div >
-        <h1> On {this.state.day}, there is Raining</h1>
-        <h1> On {this.state.yesterday}, there was Sunny</h1>
+      <div className="App">
+        <h1> Today, there is Raining</h1>
+        <button onClick={() => this.handleWeather()}>Greeting</button>
       </div>
-    )
+    );
   }
 }
