@@ -99,3 +99,72 @@ After successfully execution of the app, we will get the result like this as giv
 ![alt devTools](images/Start_Screen.PNG)
 
 In this way, we create a new React app and later, certainly we customize the folders and files include in the package as per our need.
+
+
+# 2. React State and Events
+
+### 1. What is the React State?
+
+In simple words, State is built-in React Object to store data about the component. The stored value varies in state, the component renders again. It is a private Object which cannot be accessed outside the class. Actually, it acts as a variable and can be used where we want.
+
+### 2. Demo of State in React
+
+In the demonstration of state, we must have a constructor as this would be used to call the default state. The exmaple is shown in the given below:
+```javascript
+
+import React, { Component } from 'react'
+
+export default class Weather extends Component {
+
+    constructor(){
+        super();
+        this.state = {
+            day : 'Thursday'
+            
+        }
+    }
+  render() {
+    return (
+      <div>
+        <h1> On {this.state.day}, there is Raining</h1>
+      </div>
+    )
+  }
+}
+
+
+```
+
+In this way, we can call the state and the value changes accroding to the component. There is also possibility to set several states at the same time and 'this' keyword uses to call the required set state as shown:
+
+```javascript
+
+import React, { Component } from 'react'
+
+export default class Weather extends Component {
+
+    constructor(){
+        super();
+        this.state = {
+            day : 'Thursday',
+             yesterday: 'Wednesday'
+            
+        }
+    }
+  render() {
+    return (
+      <div>
+        <h1> On {this.state.day}, there is Raining</h1>
+        <h1> On {this.state.day}, there was Sunny</h1>
+      </div>
+    )
+  }
+}
+
+
+```
+
+The result of these codes can be shown in the image
+
+![alt devTools](images/Start_Screen.PNG)
+
