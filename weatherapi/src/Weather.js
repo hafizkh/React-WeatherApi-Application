@@ -14,7 +14,7 @@ export default class Weather extends Component {
     return (
       <div >
         <h1> On {this.state.day}, there is Raining</h1>
-        <h1> On {this.state.day}, there was Sunny</h1>
+        <h1> On {this.state.yesterday}, there was Sunny</h1>
       </div>
     )
   }
