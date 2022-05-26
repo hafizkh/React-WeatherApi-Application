@@ -222,6 +222,6 @@ export default class Weather extends Component {
 ```
 
 The result of the above code is given in the following scrennshot
-![alt devTools](images/Demo_State_React.PNG)
+![alt devTools](images/Event_handler.PNG)
 
 
