@@ -146,7 +146,7 @@ export default class Weather extends Component {
     constructor(){
         super();
         this.state = {
-            day : 'Thursday',
+            today : 'Thursday',
              yesterday: 'Wednesday'
             
         }
@@ -154,8 +154,8 @@ export default class Weather extends Component {
   render() {
     return (
       <div>
-        <h1> On {this.state.day}, there is Raining</h1>
-        <h1> On {this.state.day}, there was Sunny</h1>
+        <h1> On {this.state.today}, there is Raining</h1>
+        <h1> On {this.state.yesterday}, there was Sunny</h1>
       </div>
     )
   }
@@ -222,6 +222,5 @@ export default class Weather extends Component {
 ```
 
 The result of the above code is given in the following scrennshot
-![alt devTools](images/Demo_State_React.PNG)
-
+![alt devTools](images/Event_handler.PNG)
 
