@@ -16,7 +16,7 @@ React is a Facebook-developed FrontEnd JavaScript Library which is being used wi
   - Auto Rename Tag, This extension provides the help to change the name of the tag by changing the name of only the starting tag but ending tag changes automatically
  ##### Chrome Extensions:
  - React Dev tools (Chrome Extension to visualize the React result better) as shown in the fig.
-  ![alt devTools](images/React_dev_tools.PNG)
+  ![alt devTools](src/images/React_dev_tools.PNG)
  ###### For Backend:
  - Node Js (To execute JS without using browser)
 
@@ -96,7 +96,7 @@ npm run start
 ```
 After successfully execution of the app, we will get the result like this as given below:
 
-![alt devTools](images/Start_Screen.PNG)
+![alt devTools](src/images/Start_Screen.PNG)
 
 In this way, we create a new React app and later, certainly we customize the folders and files include in the package as per our need.
 
@@ -166,7 +166,7 @@ export default class Weather extends Component {
 
 The result of these codes can be shown in the image
 
-![alt devTools](images/Demo_State_React.PNG)
+![alt devTools](src/images/Demo_State_React.PNG)
 
 ### 3. What is an event?
 
@@ -222,7 +222,7 @@ export default class Weather extends Component {
 ```
 
 The result of the above code is given in the following scrennshot
-![alt devTools](images/Event_handler.PNG)
+![alt devTools](src/images/Event_handler.PNG)
 
 # 3. React Hooks
 
