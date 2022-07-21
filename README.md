@@ -1,4 +1,4 @@
-# React Documentation for WeatherApi Application
+# React Weather API Application
 
 # 1. React Basics
  ### 1. What is React.js?
@@ -223,8 +223,5 @@ export default class Weather extends Component {
 
 The result of the above code is given in the following scrennshot
 ![alt devTools](images/Event_handler.PNG)
-<<<<<<< HEAD
-=======
 
->>>>>>> f4a280b3b97622be6953a75ead39a87e40dcf843
 
