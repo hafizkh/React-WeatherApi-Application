@@ -1,16 +1,11 @@
-import React, { Component } from "react";
-import "../App.css";
+import React from 'react'
 
-export default class Weather extends Component {
-  handleWeather() {
-    alert("Happy Rainy day");
-  }
-  render() {
-    return (
-      <div className="App">
-        <h1> Today, there is Raining</h1>
-        <button onClick={() => this.handleWeather()}>Greeting</button>
-      </div>
-    );
-  }
+const Weather = () => {
+  return (
+    <div>
+      <h1>This is Weather Page</h1>
+    </div>
+  )
 }
+
+export default Weather
