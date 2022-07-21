@@ -25,8 +25,8 @@ const NavBar = () => {
     return (
         <div>
             <Navbar bg="dark" variant="dark">
-                <Container fluid>
-                    <Navbar.Brand as={Link} to={"/home"}>Wether</Navbar.Brand>
+                <Container>
+                    <Navbar.Brand as={Link} to={"/home"}>Thunder Search</Navbar.Brand>
                     <Navbar.Toggle aria-controls="navbarScroll" />
                     <Navbar.Collapse id="navbarScroll">
                         <Nav className="me-auto">
