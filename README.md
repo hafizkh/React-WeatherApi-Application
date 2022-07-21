@@ -224,4 +224,12 @@ export default class Weather extends Component {
 The result of the above code is given in the following scrennshot
 ![alt devTools](images/Event_handler.PNG)
 
+# 3. React Hooks
+
+# 4. Weather Application API
+
+#### Click on the following link to view the full Application
+
+https://hafizkh.github.io/React-WeatherApi-Application/
+
 
