@@ -223,4 +223,8 @@ export default class Weather extends Component {
 
 The result of the above code is given in the following scrennshot
 ![alt devTools](images/Event_handler.PNG)
+<<<<<<< HEAD
+=======
+
+>>>>>>> f4a280b3b97622be6953a75ead39a87e40dcf843
 
