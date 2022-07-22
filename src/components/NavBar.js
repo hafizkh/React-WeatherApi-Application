@@ -1,6 +1,5 @@
 import React, { useState } from 'react'
 import '../App.css';
-import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import { Link, useNavigate } from 'react-router-dom';
@@ -26,12 +25,9 @@ const NavBar = () => {
     return (
         <div>
             <Navbar bg="dark" variant="dark">
-                <Container>
-                    <Navbar.Brand href='/'>
+                    <Navbar.Brand as= {Link} to='/'>
                     <img  className="img-responsive" src={weather_logo} alt="Weather logo" />
                     </Navbar.Brand>
-                    <Navbar.Toggle aria-controls="navbarScroll" />
-                    <Navbar.Collapse id="navbarScroll">
                         <Nav className="me-auto">
                             <Nav.Link as={Link} to="/home">Home</Nav.Link>
                             <Nav.Link as={Link} to="/about">About</Nav.Link>
@@ -40,13 +36,12 @@ const NavBar = () => {
 
                         </Nav>
 
-                        {!isLoggedIn ? <form className="d-flex">
+                        {!isLoggedIn ? <form style={{marginRight: '6rem'}} className="d-flex">
                             <button className="btn btn-primary" onClick={logIn}> Login </button>
                             <Link className="btn btn-primary mx-2" to="/signup" role="button">Signup</Link>
-                        </form> : <button className="btn btn-primary" onClick={logOut}> Logout </button>}
+                        </form> : <button style={{marginRight: '6rem'}} className="btn btn-primary" onClick={logOut}> Logout </button>}
 
-                    </Navbar.Collapse>
-                </Container>
+                    {/* </Navbar.Collapse> */}
             </Navbar>
         </div>
 

@@ -27,7 +27,9 @@
 .img-responsive{
   width:8vw;
   height:8vh;
-  border-radius:2rem
+  border-radius:2rem;
+  margin-right: 2rem;
+  margin-left: 6rem;
 }
 
 .App-link {

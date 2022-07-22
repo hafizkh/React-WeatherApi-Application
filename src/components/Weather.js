@@ -5,7 +5,7 @@ const Weather = () => {
 
   return (
     <div>
-      <Form style={{ margin: '47.5rem' }} className="d-flex mt-4">
+      <Form style={{ margin: '47.5rem' }} className="d-flex mt-4 search-form">
         <Form.Control
           type="search"
           placeholder="Search By City"
@@ -14,6 +14,7 @@ const Weather = () => {
         />
         <Button variant="outline-success">Search</Button>
       </Form>
+     
     </div>
   )
 }
