@@ -8,12 +8,14 @@ import NotFound from './components/NotFound';
 import WeatherCard from './components/WeatherCard';
 import About from './components/About';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import axios from 'axios';
 
 
 function App() {
   const [city, setCity] = useState('')
   const [cityData, setCityData] = useState()
 
+  // To get the Key number of the city
   const getCityInfo = (e) => {
     e.preventDefault()
     const apiKey = process.env.REACT_APP_API
@@ -22,8 +24,17 @@ function App() {
       .then(res => res.json())
       .then(data => {
         console.log(data[0].Key);
-        setCity('')
+        
+  // To get the Weather information of the city
+        if (data[0].Key){
+          axios.get(`http://dataservice.accuweather.com/currentconditions/v1/${data[0].Key}?apikey=${apiKey}`)
+          .then((response)=>{
+            console.log(response.data);
+          }).catch((e)=>alert(e))
+        }
+
         })
+        setCity('')
   }
 
   return (
