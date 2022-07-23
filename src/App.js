@@ -12,17 +12,20 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
 function App() {
   const [city, setCity] = useState('')
-  const [cityDetail, setCityDetail] = useState(null)
-  const getCityInfo = (event) => {
-    event.preventDefault()
-    const apiKey = "fwzsDPtgLlBfdmzpO1MApM75L3UAifsA"
+  const [cityData, setCityData] = useState()
+
+  const getCityInfo = (e) => {
+    e.preventDefault()
+    const apiKey = process.env.REACT_APP_API
     const url = `http://dataservice.accuweather.com/locations/v1/cities/search?apikey=${apiKey}&q=${city}`
     fetch(url)
       .then(res => res.json())
-      .then(data => console.log(data[0]))
-      .catch((e) => console.log(e));
-    setCity('')
+      .then(data => {
+        console.log(data[0].Key);
+        setCity('')
+        })
   }
+
   return (
     <div className="App">
       <Router>
@@ -32,9 +35,9 @@ function App() {
           <Route exact path='/home' element={<Home />} />
           <Route exact path='/about' element={<About />} />
           <Route exact path='/weather' element={<Weather city={city} setCity={setCity}
-            getCityInfo={getCityInfo} cityDetail={cityDetail} />} />
+            getCityInfo={getCityInfo} />} />
           <Route exact path='/contact' element={<Contact />} />
-          <Route exact path='/weatherCard' element={<WeatherCard cityDetail={cityDetail} />} />
+          <Route exact path='/weatherCard' element={<WeatherCard cityData={cityData} setCityData={setCityData} />} />
           <Route path='/*' element={<NotFound />} />
         </Routes>
 

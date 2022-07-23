@@ -1,23 +1,8 @@
-import React,{useState,useEffect} from 'react'
+import React from 'react'
 import { Card, Button } from 'react-bootstrap'
 
-const WeatherCard = ({cityDetail}) => {
-  // console.log(cityDetail);
-  const [data, setData] = useState(null);
-
-  // useEffect(()=>{
-  //   setData(null)
-  //   const apiKey = "fwzsDPtgLlBfdmzpO1MApM75L3UAifsA"
-  //   const url = `http://dataservice.accuweather.com/currentconditions/v1/${cityDetail.Key}?apikey=${apiKey}`
-  //   fetch(url)
-  //   .then((response)=>{
-  //     setData(response.data([0]))
-  //   })
-  
-  // },[cityDetail.Key])
-
-    
-  return (
+const WeatherCard = () => {
+return(
     <div >
 
       <Card style={{ borderRadius: '1rem', height: '20rem' }} className= 'mt-3'>
